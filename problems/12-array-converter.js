@@ -11,9 +11,33 @@ console.log(arrayConverter(["mango", "pineapple"])); // => {mango: 1, pineapple:
 console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {apple: 1, banana: 2, potato: 1}
 ***********************************************************************/
 
+// function arrayConverter(array) {
+//   let obj = {};
+//   for (let i = 0; i < array.length; i++) {
+//       let keys = array[i];
+//       if (obj[keys] === undefined) {
+//         obj[keys] = 1;
+//       }else {
+//         obj[keys]++
+//       }
+//   }return obj
+// }
+
 function arrayConverter(array) {
-  // your code here
+  let obj = {};
+
+  array.forEach((key)=>{
+    if (obj[key] === undefined) {
+      obj[key] = 1;
+    }else {
+      obj[key]++
+    }
+  })
+  return obj
 }
+console.log(arrayConverter(["apple", "apple"])); // => {apple: 2}
+// console.log(arrayConverter(["mango", "pineapple"])); // => {mango: 1, pineapple: 1}
+// console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {apple: 1, banana: 2, potato: 1}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = arrayConverter;
