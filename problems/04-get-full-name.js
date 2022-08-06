@@ -11,7 +11,7 @@ getFullName(p2); // => 'Charlie Brown'
 ***********************************************************************/
 
 function getFullName(person) {
-  return person.firstName + ' ' + person.lastName
+return person.firstName + " " + person.lastName  // we use person(obj) and firstname is key so we use dot notation to get the value
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

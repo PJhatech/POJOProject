@@ -11,7 +11,7 @@ spreadItOut(["apple", "banana"], [1,2,3]); // => ["apple", "banana", 1, 2, 3];
 ***********************************************************************/
 
 function spreadItOut(array1, array2) {
-    return arr = [...array1, ...array2];
+    return arr = [...array1, ...array2];          // taking the arrays and spreading them to put them together and return one array
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

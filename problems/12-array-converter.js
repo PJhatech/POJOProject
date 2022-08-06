@@ -24,16 +24,16 @@ console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {app
 // }
 
 function arrayConverter(array) {
-  let obj = {};
+  let obj = {};       // create new object
 
-  array.forEach((key)=>{
-    if (obj[key] === undefined) {
-      obj[key] = 1;
+  array.forEach((key)=>{      //loop the array to find the key
+    if (obj[key] === undefined) {   // if the key is not in the object
+      obj[key] = 1;                 // set that key and return 1 as a value
     }else {
-      obj[key]++
+      obj[key]++                 // if the key is name is found increase the value count
     }
   })
-  return obj
+  return obj                     // return the new object
 }
 console.log(arrayConverter(["apple", "apple"])); // => {apple: 2}
 // console.log(arrayConverter(["mango", "pineapple"])); // => {mango: 1, pineapple: 1}

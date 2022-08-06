@@ -10,10 +10,10 @@ restSum(0); // => 0
 ***********************************************************************/
 
 // you'll need to change the parameters!
-function restSum(...nums) {
- let sum = 0
-  nums.forEach(function (rest) {
-    sum += rest
+function restSum(...nums) {       // used rest method
+ let sum = 0          // make a sum varible to store total
+  nums.forEach(function (rest) {         // loop the parameter and set varible
+    sum += rest                          // add the element in the loop to the sum varible
   })
   return sum
 }

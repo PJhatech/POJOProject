@@ -13,7 +13,7 @@ keysInObject(foods); // => ["apple", "lemon", "mango"]
 ***********************************************************************/
 
 function keysInObject(obj) {
-  return Object.keys(obj)
+  return Object.keys(obj)       // using Object.keys method to return an array of keys
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

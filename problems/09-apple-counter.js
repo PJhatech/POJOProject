@@ -30,10 +30,10 @@ appleCounter(obj3); // => 3
 
 function appleCounter(appleObj) {
   // your code here
-  let count = 0;
-  for (let key in appleObj){
-    if (key.toLowerCase().includes("apple")){
-      count++
+  let count = 0;               // make a count varible to keep track
+  for (let key in appleObj){    // loop the object to find each element
+    if (key.toLowerCase().includes("apple")){     // if the key in the object is included in that string
+      count++                                   // we increase the count if we find the ele
     }
 }
 return count

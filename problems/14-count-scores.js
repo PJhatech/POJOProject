@@ -29,21 +29,21 @@ console.log(countScores(peeps)); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
 
 function countScores(people) {
   // your code here
-  let scores = {};
+  let scores = {};         // new object
 
-  for (let i = 0; i < people.length; i++) {
-    let person = people[i];
-    let name = person.name;
-    let score = person.score;
+  for (let i = 0; i < people.length; i++) { // loop the people parameter
+    let person = people[i];                 // assign the element of the loop
+    let key = person.name;                 // re assign the key in the object
+    let score = person.score;            // re assign the value in the object
 
-    if (name in scores) {
-      scores[name] += score;
+    if (key in scores) {                // if the key is in the object
+      scores[key] += score;            // we return the object with the key and value
     } else {
-      scores[name] = score;
+      scores[key] = score;            // we return the object with the key and value if no changes was found in the value
     };
   };
 
-  return scores;
+  return scores;           // return the new object
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
